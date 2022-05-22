@@ -1,1 +1,8 @@
+# Python
+# This is just some code I put together which you can use to send messages via Discord webhooks.
 
+from discord import Webhook, RequestsWebhookAdapter
+import discord
+
+webhook = Webhook.from_url("", adapter=RequestsWebhookAdapter()) # Put your webhook link in "webhook here".
+webhook.send("") # You can put the message you want to send in there. 
